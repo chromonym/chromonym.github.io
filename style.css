@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --black: #1a1b23;
+    --grey: #b7b6c1;
+    --gradient: linear-gradient(180deg, #ff9200 0%, #ffb624 25%, #fff953 50%, #6dffab 75%, #00ffff 100%);
+}
+
+body {
+    background-color: var(--black);
+    color: var(--grey);
+    padding: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Tomorrow', sans-serif;
+    margin-top: 0px;
+    color: white;
+}
+
+a {
+    color: cyan;
+}
+a:visited {
+    color: #ffb624;
+}
+
+small {
+    font-size: 0.5em;
+    color: var(--grey);
+}
+
+.gradient-border {
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    background: var(--gradient);
+}
+.gradient-box {
+    border-radius: 5px;
+    background: var(--black);
+    padding: 1rem;
+}
