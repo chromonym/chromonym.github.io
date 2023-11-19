@@ -32,14 +32,46 @@ small {
     color: var(--grey);
 }
 
-.gradient-border {
-    padding: 5px;
-    border-radius: 10px;
-    position: relative;
-    background: var(--gradient);
-}
-.gradient-box {
-    border-radius: 5px;
-    background: var(--black);
+.gBox {
+    align-items: center;
     padding: 1rem;
+    position: relative;
+    background: var(--black);
+    border-radius: 10px;
+    /* below are necessary for gradient border */
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    margin-bottom: 2em;
+}
+.gBox::before { /* this entire thing is necessary for a gradient border */
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background-image: var(--gradient);
+    background-attachment: fixed;
+}
+.linkBox {
+    width: 20em;
+    margin: auto;
+    margin-bottom: 3em;
+    max-width: 90%;
+}
+#linkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#line {
+    position: fixed;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: calc(50% - 2.5px);
+    background-image: var(--gradient);
+    background-attachment: fixed;
 }
