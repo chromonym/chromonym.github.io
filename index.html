@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS FILES TO LOAD BUT NOT DISPLAY -->
+    <link rel="stylesheet" href="themes/light.css"/>
+    <link rel="stylesheet" href="themes/gradient.css"/>
+    <!-- that's all -->
+    <link rel="stylesheet" href="themes/dark.css" id="theme_css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <title>xxos site</title>
@@ -10,6 +15,7 @@
     <div class="gBox">
         <h1><small>The</small>XXOs’ webbed site</h1>
         <p>This is just a placeholder site with a bunch of links at the moment. I'll get to making it a proper website (and look nice) some time in the future.</p>
+        <button id="themeChanger">Change theme</button>
     </div>
     <div class="gBox">
         <h3>Incomplete projects (that have a website):</h3>
@@ -22,4 +28,5 @@
         </ul>
     </div>
 </body>
+<script src="themeswitch.js" defer></script>
 </html>

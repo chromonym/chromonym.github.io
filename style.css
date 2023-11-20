@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Tomorrow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-:root {
-    --black: #1a1b23;
-    --grey: #b7b6c1;
-    --gradient: linear-gradient(180deg, #ff9200 0%, #ffb624 25%, #fff953 50%, #6dffab 75%, #00ffff 100%);
-}
-
 body {
-    background-color: var(--black);
-    color: var(--grey);
+    background: var(--bg);
+    background-attachment: fixed;
+    color: var(--text);
     padding: 30px;
     font-family: 'Inter', sans-serif;
 }
@@ -17,7 +12,7 @@ body {
 h1, h2, h3 {
     font-family: 'Tomorrow', sans-serif;
     margin-top: 0px;
-    color: white;
+    color: var(--headers);
 }
 
 a {
@@ -29,14 +24,15 @@ a:visited {
 
 small {
     font-size: 0.5em;
-    color: var(--grey);
+    color: var(--text);
 }
 
 .gBox {
     align-items: center;
     padding: 1rem;
     position: relative;
-    background: var(--black);
+    background: var(--bg);
+    background-attachment: fixed;
     border-radius: 10px;
     /* below are necessary for gradient border */
     background-clip: padding-box;
@@ -50,7 +46,7 @@ small {
     z-index: -1;
     margin: -5px;
     border-radius: inherit;
-    background-image: var(--gradient);
+    background: var(--gradient);
     background-attachment: fixed;
 }
 
@@ -75,7 +71,7 @@ a.sLink {
     padding: 5px;
 }
 a.sLink:hover {
-    color: white;
+    color: var(--headers);
 }
 .sLink.discord {
     color: #5865F2
@@ -108,6 +104,6 @@ a.sLink:hover {
     top: 0;
     bottom: 0;
     left: calc(50% - 2.5px);
-    background-image: var(--gradient);
+    background: var(--gradient);
     background-attachment: fixed;
 }

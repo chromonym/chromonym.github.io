@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS FILES TO LOAD BUT NOT DISPLAY -->
+    <link rel="stylesheet" href="themes/light.css"/>
+    <link rel="stylesheet" href="themes/gradient.css"/>
+    <!-- that's all -->
+    <link rel="stylesheet" href="themes/dark.css" id="theme_css"/>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <title>xxos site ∫ links</title>
@@ -11,6 +16,7 @@
     <div id="linkContainer">
         <div class="gBox linkBox" style="min-width: 10em;">
             <h1 style="margin-bottom: 0px;">Links</h1>
+            <button id="themeChanger" title="this website uses cookies to save your theme">Change theme</button>
         </div>
         <div class="gBox linkBox">
             <a href="https://discord.com/users/648765051297202195" target="_blank" class="sLink discord">Discord (@xxos)</a>
@@ -26,4 +32,5 @@
         </div>
     </div>
 </body>
+<script src="themeswitch.js"></script>
 </html>
