@@ -7,6 +7,10 @@ body {
     color: var(--text);
     padding: 30px;
     font-family: 'Inter', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 h1, h2, h3 {
@@ -48,6 +52,11 @@ small {
     border-radius: inherit;
     background: var(--gradient);
     background-attachment: fixed;
+}
+header.gBox {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
 }
 
 .linkBox {
@@ -106,4 +115,16 @@ a.sLink:hover {
     left: calc(50% - 2.5px);
     background: var(--gradient);
     background-attachment: fixed;
+    z-index: -1;
+}
+
+#logo {
+    background: var(--headers);
+    width: 40px;
+    height: 40px;
+    -webkit-mask-image: url(imgs/cq-mask.svg);
+    mask-image: url(imgs/cq-mask.svg);
+}
+#logo:hover {
+    background: var(--gradient);
 }
