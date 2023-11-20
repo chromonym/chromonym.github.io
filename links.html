@@ -13,14 +13,24 @@
     <title>xxos site ∫ links</title>
 </head>
 <body>
+    <div id="mobileNav" class="gBox" onclick="openMenu()">Ξ</div>
     <header class="gBox">
-        <div id="logo"></div>
+        <a href="/" style="margin-right: auto;"><div id="logo"></div></a>
+        <div class="ider"></div>
+        <a class="button" href="/">Home</a>
+        <div class="ider"></div>
+        <a class="button" href="links">Links</a>
+        <div class="ider"></div>
+        <select name="theme" id="theme" class="button">
+            <option value="dark">Dark mode</option>
+            <option value="light">Light mode</option>
+            <option value="gradient">𝑔𝓇𝒶𝒹𝒾𝑒𝓃𝓉</option>
+        </select>
     </header>
     <div id="line"></div>
     <div id="linkContainer">
         <div class="gBox linkBox" style="min-width: 10em;">
             <h1 style="margin-bottom: 0px;">Links</h1>
-            <button id="themeChanger" title="this website uses cookies to save your theme">Change theme</button>
         </div>
         <div class="gBox linkBox">
             <a href="https://discord.com/users/648765051297202195" target="_blank" class="sLink discord">Discord (@xxos)</a>

@@ -57,6 +57,48 @@ header.gBox {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+    padding: 0;
+}
+div.ider {
+    background: var(--gradient);
+    background-attachment: fixed;
+    width: 2px;
+    height: 40px;
+    display: block;
+}
+#mobileNav {
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-right: hidden;
+    border-top: none;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    cursor: pointer;
+    display: none;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+}
+a.button, select.button {
+    text-decoration: none;
+    color: var(--headers);
+    padding: 20px;
+    background: transparent;
+    border: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+}
+select.button > option {
+    background: var(--bg);
 }
 
 .linkBox {
@@ -124,7 +166,39 @@ a.sLink:hover {
     height: 40px;
     -webkit-mask-image: url(imgs/cq-mask.svg);
     mask-image: url(imgs/cq-mask.svg);
+    margin-left: 10px;
 }
 #logo:hover {
     background: var(--gradient);
+}
+
+@media (max-width: 800px) {
+    body {
+        padding-top: 30px;
+        margin-top: 8px;
+        overflow-x: hidden;
+    }
+    header.gBox {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        flex-direction: column;
+        border-top: solid 5px transparent;
+        display: none;
+        height: 100vw;
+    }
+    #logo:hover {
+        background-attachment: fixed;
+    }
+    #mobileNav {
+        display: block;
+    }
+    header.gBox.open {
+        display: block;
+    }
+    div.ider {
+        display: none;
+    }
+    .button {
+        width: 100%;
+    }
 }
