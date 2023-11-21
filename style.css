@@ -71,6 +71,9 @@ div.ider {
     height: 40px;
     display: block;
 }
+div.ider.mobileOnly {
+    display: none;
+}
 #mobileNav {
     right: 1rem;
     top: 1rem;
@@ -171,20 +174,43 @@ a.sLink:hover {
 }
 
 #topOfMenu {
-    display: block;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 10px;
     margin-right: auto;
+    height: 40px;
+}
+#topOfMenu > a > * {
+    background-image: var(--headers);
+    background-color: var(--headers);
+}
+#topOfMenu > a:hover > * {
+    background-image: var(--gradient);
+    background-color: var(--gradient);
+}
+#topOfMenu > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 #logo {
     display: inline-block;
-    background: var(--headers);
     width: 40px;
     height: 40px;
     -webkit-mask-image: url(imgs/cq-mask.svg);
     mask-image: url(imgs/cq-mask.svg);
 }
-#logo:hover {
-    background: var(--gradient);
+#logoText {
+    font-weight: bold;
+    padding-left: 0.3em;
+    font-size: 1.75em;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 @media (max-width: 800px) {
@@ -215,6 +241,9 @@ a.sLink:hover {
     div.ider {
         width: auto;
         height: 2px;
+    }
+    div.ider.mobileOnly {
+        display: block;
     }
     .button {
         width: inherit;
