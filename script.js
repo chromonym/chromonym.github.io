@@ -17,6 +17,7 @@ function getCookie(cname) {
 
 function openMenu() {
     document.getElementsByTagName("header")[0].classList.toggle("open");
+    document.getElementById("mobileNav").classList.toggle("open");
 }
 
 var theme = "dark";

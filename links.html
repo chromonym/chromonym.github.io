@@ -15,11 +15,14 @@
 <body>
     <div id="mobileNav" class="gBox" onclick="openMenu()">Ξ</div>
     <header class="gBox">
-        <a href="/" style="margin-right: auto;"><div id="logo"></div></a>
+        <div id="topOfMenu">
+            <a href="/" style="margin-right: auto;"><div id="logo"></div></a>
+            <div id="closeNav" onclick="openMenu()">X</div>
+        </div>
         <div class="ider"></div>
         <a class="button" href="/">Home</a>
         <div class="ider"></div>
-        <a class="button" href="links">Links</a>
+        <a class="button active" href="links">Links</a>
         <div class="ider"></div>
         <select name="theme" id="theme" class="button">
             <option value="dark">Dark mode</option>

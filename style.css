@@ -20,10 +20,10 @@ h1, h2, h3 {
 }
 
 a {
-    color: cyan;
+    color: var(--primary);
 }
 a:visited {
-    color: #ffb624;
+    color: var(--secondary);
 }
 
 small {
@@ -72,30 +72,40 @@ div.ider {
     display: block;
 }
 #mobileNav {
-    right: 0;
-    top: 0;
+    right: 1rem;
+    top: 1rem;
     position: absolute;
     border-right: hidden;
     border-top: none;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 50%;
     cursor: pointer;
     display: none;
     width: 10px;
     height: 10px;
-    text-align: center;
     font-family: 'Tomorrow', sans-serif;
+}
+#closeNav {
+    float: right;
+    display: none;
+    cursor: pointer;
 }
 a.button, select.button {
     text-decoration: none;
     color: var(--headers);
-    padding: 20px;
+    padding: 16px;
+    margin: 4px;
     background: transparent;
     border: transparent;
     font-family: 'Inter', sans-serif;
     font-size: 1em;
     cursor: pointer;
+    display: block;
+    text-align: center;
+}
+.button.active {
+    color: var(--bg);
+    background: var(--gradient);
+    background-attachment: fixed;
 }
 select.button > option {
     background: var(--bg);
@@ -160,13 +170,18 @@ a.sLink:hover {
     z-index: -1;
 }
 
+#topOfMenu {
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+}
 #logo {
+    display: inline-block;
     background: var(--headers);
     width: 40px;
     height: 40px;
     -webkit-mask-image: url(imgs/cq-mask.svg);
     mask-image: url(imgs/cq-mask.svg);
-    margin-left: 10px;
 }
 #logo:hover {
     background: var(--gradient);
@@ -184,21 +199,31 @@ a.sLink:hover {
         flex-direction: column;
         border-top: solid 5px transparent;
         display: none;
-        height: 100vw;
-    }
-    #logo:hover {
-        background-attachment: fixed;
     }
     #mobileNav {
         display: block;
+    }
+    #mobileNav.open {
+        display: none;
+    }
+    #closeNav {
+        display: inline-block;
     }
     header.gBox.open {
         display: block;
     }
     div.ider {
-        display: none;
+        width: auto;
+        height: 2px;
     }
     .button {
-        width: 100%;
+        width: inherit;
+    }
+    #topOfMenu {
+        margin: 10px;
+    }
+    a.button, select.button {
+        padding: 20px;
+        margin: 0px;
     }
 }
