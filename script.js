@@ -1,6 +1,5 @@
 function getCookie(cname) {
     let name = cname + "=";
-    console.log(document.cookie);
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
     for(let i = 0; i <ca.length; i++) {
@@ -30,12 +29,10 @@ window.onload = function () {
         document.getElementById("theme").value = "light";
         theme = "light";
     } else if (thm == "gradient") {
-        console.log("a");
         document.getElementById('theme_css').href = "./themes/gradient.css";
         document.getElementById("theme").value = "gradient";
         theme = "gradient";
     } else {
-        console.log("a");
         document.getElementById('theme_css').href = "./themes/dark.css";
         document.getElementById("theme").value = "dark";
         theme = "dark";

@@ -161,6 +161,12 @@ a.sLink:hover {
 .sLink.youtube:hover {
     background-color: red;
 }
+.sLink.mediawiki {
+    color: #a11f63; /* according to the 2012 agora palette for blue accents */
+}
+.sLink.mediawiki:hover {
+    background-color: #a11f63;
+}
 
 #line {
     position: fixed;
