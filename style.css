@@ -167,6 +167,41 @@ a.sLink:hover {
 .sLink.mediawiki:hover {
     background-color: #a11f63;
 }
+.sLink.ao3 {
+    color: #970000;
+}
+.sLink.ao3:hover {
+    background-color: #970000;
+}
+
+.interestContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: calc(1.5em - 10px);
+}
+.interestContainer div {
+    margin: 10px;
+    width: 200px;
+    padding: 0;
+}
+.maskedImg {
+    display: inline-block;
+    width: 200px;
+    height: 130px;
+    background-color: var(--headers);
+    color: transparent;
+}
+.maskedImg:hover {
+    background-image: var(--gradient);
+}
+
+hr {
+    height: 5px;
+    background: var(--text);
+    border: none;
+    width: 150px;
+}
 
 #line {
     position: fixed;
