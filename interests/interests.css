@@ -1,0 +1,43 @@
+/* FONTS */
+/* Tunic */
+@font-face {
+    font-family: "Linux Libertine Mono";
+    src: url(fonts/LinLibertine_M.otf);
+}
+@font-face {
+    font-family: "Odin Rounded";
+    src: url(fonts/OdinRounded-Yd82.ttf);
+}
+@font-face {
+    font-family: "Universal Serif";
+    src: url(fonts/universal-serif.ttf);
+}
+/* OneShot */
+@font-face {
+    font-family: "Terminus TTF Bold";
+    src: url(fonts/TerminusTTF-Bold.ttf);
+}
+/* Outer Wilds */
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url(fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf);
+}
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url(fonts/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf);
+    font-weight: bold;
+}
+/* Ithkuil */
+@font-face {
+    font-family: IthkuilBasic;
+    src: url(fonts/IthkuilBasic.ttf);
+}
+@font-face {
+    font-family: IthkuilFlow;
+    src: url(fonts/IthkuilFlow.ttf);
+}
+/* toki pona */
+@font-face {
+    font-family: nasin-nanpa;
+    src: url(fonts/nasin-nanpa-2.7.1.otf);
+}
