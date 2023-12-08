@@ -19,36 +19,77 @@ function openMenu() {
     document.getElementById("mobileNav").classList.toggle("open");
 }
 
+function switchTheme(thm) {
+    if (thm == "light") {
+        document.getElementById('theme_css').href = document.getElementById('theme_css').href.replace("gradient","light").replace("dark","light");
+        document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href = document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href.replace("gradient","light").replace("dark","light");
+        document.getElementById("theme").value = "light";
+        document.cookie = "theme=light; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
+        return "light";
+    } else if (thm == "gradient") {
+        document.getElementById('theme_css').href = document.getElementById('theme_css').href.replace("light","gradient").replace("dark","gradient");
+        document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href = document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href.replace("light","gradient").replace("dark","gradient");
+        document.getElementById("theme").value = "gradient";
+        document.cookie = "theme=gradient; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
+        return "gradient";
+    } else {
+        document.getElementById('theme_css').href = document.getElementById('theme_css').href.replace("light","dark").replace("gradient","dark");
+        document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href = document.getElementById('interestPopup').contentWindow.document.getElementById('theme_css').href.replace("light","dark").replace("gradient","dark");
+        document.getElementById("theme").value = "dark";
+        document.cookie = "theme=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
+        return "dark";
+    }
+}
+
+var popup = "";
+
+function interestPopup(link) {
+    if (window.innerWidth < 670 && popup) {
+        document.getElementById('iPopupBorder').style.display = "none";
+        document.getElementById('interestBody').style.width = "100%";
+        document.getElementById(popup).classList.remove("active");
+        if (popup == link) {
+            popup = "";
+            return false;
+        } else {
+            popup = "";
+            return true;
+        }
+    } else if (window.innerWidth >= 670) {
+        if (document.getElementById('iPopupBorder').style.display == "none" || !document.getElementById('iPopupBorder').style.display) {
+            document.getElementById('iPopupBorder').style.display = "block";
+            document.getElementById('interestBody').style.width = "50%";
+            document.getElementById(link).classList.add("active");
+            popup = link;
+        } else if (popup == link) {
+            document.getElementById('iPopupBorder').style.display = "none";
+            document.getElementById('interestBody').style.width = "100%";
+            document.getElementById(popup).classList.remove("active");
+            popup = "";
+        } else {
+            document.getElementById(link).classList.add("active");
+            if (popup) {
+                document.getElementById(popup).classList.remove("active");
+            }
+            popup = link;
+        }
+        document.getElementById("interestPopup").src = "./"+link+".html";
+        console.log(document.getElementById("interestPopup").src);
+        return false;
+    } else {
+        return true;
+    }
+}
+
 var theme = "dark";
 var opened = false;
 
 window.onload = function () {
     let thm = getCookie("theme");
-    if (thm == "light") {
-        document.getElementById('theme_css').href = "./themes/light.css";
-        document.getElementById("theme").value = "light";
-        theme = "light";
-    } else if (thm == "gradient") {
-        document.getElementById('theme_css').href = "./themes/gradient.css";
-        document.getElementById("theme").value = "gradient";
-        theme = "gradient";
-    } else {
-        document.getElementById('theme_css').href = "./themes/dark.css";
-        document.getElementById("theme").value = "dark";
-        theme = "dark";
-    }
+    theme = switchTheme(thm);
 };
 
 document.getElementById('theme').onchange = function () {
     theme = document.getElementById("theme").value;
-    if (theme == "light") {
-        document.getElementById('theme_css').href = "./themes/light.css";
-        document.cookie = "theme=light; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
-    } else if (theme == "gradient") {
-        document.getElementById('theme_css').href = "./themes/gradient.css";
-        document.cookie = "theme=gradient; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
-    } else if (theme == "dark") {
-        document.getElementById('theme_css').href = "./themes/dark.css";
-        document.cookie = "theme=dark; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;";
-    }
+    switchTheme(theme);
 }

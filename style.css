@@ -214,6 +214,26 @@ hr {
     z-index: -1;
 }
 
+#interestPopup {
+    border: none;
+}
+#iPopupBorder {
+    width: 45%;
+    height: calc(100% - 150px);
+    position: fixed;
+    display: none;
+}
+#iPopupBorder > .gBox {
+    height: inherit;
+}
+#interestBody {
+    float: right;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 #topOfMenu {
     display: flex;
     align-items: center;
