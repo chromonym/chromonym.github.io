@@ -131,12 +131,33 @@
         #splatoon:hover, #splatoon.active {
             background-image: linear-gradient(300deg, rgba(208,190,8,1) 20%, rgba(58,12,205,1) 80%);
         }
+        #fez {
+            -webkit-mask-image: url(imgs/fez.png);
+            mask-image: url(imgs/fez.png);
+        }
+        #fez:hover, #fez.active {
+            background-image:linear-gradient(160deg, rgba(85,237,250,1) 30%, rgba(118,83,177,1) 70%);
+        }
         #jetlag {
             -webkit-mask-image: url(imgs/jetlag.png);
             mask-image: url(imgs/jetlag.png);
         }
         #jetlag:hover, #jetlag.active {
             background-image: linear-gradient(225deg, rgba(254,192,65,1) 30%, rgba(248,125,66,1) 50%, rgba(233,54,55,1) 70%);
+        }
+        #pibe {
+            -webkit-mask-image: url(imgs/playitbyear.png);
+            mask-image: url(imgs/playitbyear.png);
+        }
+        #pibe:hover, #pibe:active {
+            background-image: linear-gradient(138deg, rgba(203,67,147,1) 10%, rgba(152,17,67,1) 44%, rgba(85,14,64,1) 90%);
+        }
+        #taskmaster {
+            -webkit-mask-image: url(imgs/taskmaster.png);
+            mask-image: url(imgs/taskmaster.png);
+        }
+        #taskmaster:hover, #taskmaster:active {
+            background-image: radial-gradient(circle at 100px 100px, rgba(152,38,39,1) 23%, rgba(220,212,199,1) 89%);
         }
         #maths {
             -webkit-mask-image: url(imgs/maths.png);
@@ -182,41 +203,47 @@
         <h2 style="text-align: center">Major Interests <small>(currently)</small></h2>
         <p style="text-align: center">These options (only) will open a popup to the left with info about them (or a page if on mobile).</p>
         <div class="interestContainer">
-            <div class="gBox"><a id="oneshot" class="maskedImg" href="oneshot.html" onclick="return interestPopup('oneshot')">OneShot</a></div><!---->
-            <div class="gBox"><a id="outerwilds" class="maskedImg" href="outerwilds.html" onclick="return interestPopup('outerwilds')">Outer Wilds</a></div><!--href="https://www.mobiusdigitalgames.com/outer-wilds.html"-->
-            <div class="gBox"><a id="tunic" class="maskedImg" href="tunic.html" onclick="return interestPopup('tunic')">Tunic</a></div><!--href="https://tunicgame.com/"-->
-            <div class="gBox"><a id="ithkuil" class="maskedImg" href="ithkuil.html" onclick="return interestPopup('ithkuil')">Ithkuil</a></div><!--href="https://ithkuil.net/"-->
-            <div class="gBox"><a id="tokipona" class="maskedImg" href="tokipona.html" onclick="return interestPopup('tokipona')">toki pona</a></div><!--href="https://tokipona.org/"-->
-            <div class="gBox"><a id="geohashing" class="maskedImg" href="geohashing.html" onclick="return interestPopup('geohashing')">Geohashing</a></div><!--href="https://geohashing.site/geohashing/Main_Page"-->
+            <div class="gBox"><a id="oneshot" class="maskedImg" href="oneshot.html" onclick="return interestPopup('oneshot')" title="OneShot">OneShot</a></div><!---->
+            <div class="gBox"><a id="outerwilds" class="maskedImg" href="outerwilds.html" onclick="return interestPopup('outerwilds')" title="Outer Wilds">Outer Wilds</a></div><!--href="https://www.mobiusdigitalgames.com/outer-wilds.html"-->
+            <div class="gBox"><a id="tunic" class="maskedImg" href="tunic.html" onclick="return interestPopup('tunic')" title="Tunic">Tunic</a></div><!--href="https://tunicgame.com/"-->
+            <div class="gBox"><a id="ithkuil" class="maskedImg" href="ithkuil.html" onclick="return interestPopup('ithkuil')" title="Ithkuil">Ithkuil</a></div><!--href="https://ithkuil.net/"-->
+            <div class="gBox"><a id="tokipona" class="maskedImg" href="tokipona.html" onclick="return interestPopup('tokipona')" title="toki pona">toki pona</a></div><!--href="https://tokipona.org/"-->
+            <div class="gBox"><a id="geohashing" class="maskedImg" href="geohashing.html" onclick="return interestPopup('geohashing')" title="Geohashing">Geohashing</a></div><!--href="https://geohashing.site/geohashing/Main_Page"-->
         </div>
         <hr/>
         <h2 style="text-align: center; padding-top: 0.5em;">Other Interests</h2>
         <p style="text-align: center">These options will instead open a relevant website (in a new tab).</p>
         <h3 style="text-align: center">Videogames</h3>
         <div class="interestContainer">
-            <div class="gBox"><a id="adofai" class="maskedImg" href="https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice/" target="_blank">A Dance of Fire and Ice</a></div>
-            <div class="gBox"><a id="rhythmdoctor" class="maskedImg" href="https://rhythmdr.com/" target="_blank">Rhythm Doctor</a></div>
-            <div class="gBox"><a id="kirby" class="maskedImg" href="https://wikirby.com/wiki/Kirby_Wiki" target="_blank">Kirby</a></div>
-            <div class="gBox"><a id="pikmin" class="maskedImg" href="https://www.pikminwiki.com/" target="_blank">Pikmin</a></div>
-            <div class="gBox"><a id="pokemon" class="maskedImg" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank">Pokémon</a></div>
-            <div class="gBox"><a id="splatoon" class="maskedImg" href="https://splatoonwiki.org/wiki/Main_Page" target="_blank">Splatoon</a></div>
+            <div class="gBox"><a id="adofai" class="maskedImg" href="https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice/" target="_blank" title="A Dance of Fire and Ice">A Dance of Fire and Ice</a></div>
+            <div class="gBox"><a id="rhythmdoctor" class="maskedImg" href="https://rhythmdr.com/" target="_blank" title="Rhythm Doctor">Rhythm Doctor</a></div>
+            <div class="gBox"><a id="fez" class="maskedImg" href="http://fezgame.com/" target="_blank" title="Fez">Fez</a></div>
+            <div class="gBox"><a id="kirby" class="maskedImg" href="https://wikirby.com/wiki/Kirby_Wiki" target="_blank" title="Kirby">Kirby</a></div>
+            <div class="gBox"><a id="pikmin" class="maskedImg" href="https://www.pikminwiki.com/" target="_blank" title="Pikmin">Pikmin</a></div>
+            <div class="gBox"><a id="pokemon" class="maskedImg" href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank" title="Pokémon">Pokémon</a></div>
+            <div class="gBox"><a id="splatoon" class="maskedImg" href="https://splatoonwiki.org/wiki/Main_Page" target="_blank" title="Splatoon">Splatoon</a></div>
         </div>
         <h3 style="text-align: center;">Conlangs</h3>
         <div class="interestContainer">
-            <div class="gBox"><a id="prolangs" class="maskedImg" href="https://www.reddit.com/r/prolangs/" target="_blank">Prolangs (webcomic)</a></div>
+            <div class="gBox"><a id="prolangs" class="maskedImg" href="https://www.reddit.com/r/prolangs/" target="_blank" title="Prolangs (webcomic)">Prolangs (webcomic)</a></div>
         <!--</div>
         <p style="text-align: center;">and also:</p>
         <div class="interestContainer">-->
-            <div class="gBox"><a id="kaybop" class="maskedImg" href="https://crazyninjageeks.wordpress.com/2015/11/28/introduction-to-kayfdanfsantaptvlirtsangbesputvombngagtvlimpkayfsnafkayfgaf-boptvegpdaffshofbompvlimpgafvlimpgaf/" target="_blank">kay(f)bop(t)</a></div>
-            <div class="gBox"><a id="snapdragonrose" class="maskedImg" href="https://www.tumblr.com/abalidoth/700669343403556864/snapdragon-rose" target="_blank">Snapdragon Rose</a></div>
-            <div class="gBox"><a id="uwulang" class="maskedImg" href="https://docs.google.com/document/d/1ZV1U0S8qC6yJEi6grFO_Vq5A15lRVCLYeq_udWsC-9Y/edit" target="_blank">UwU</a></div>
-            <div class="gBox"><a id="conlanging" class="maskedImg" href="https://conlang.org/" target="_blank">Conlanging in general</a></div>
+            <div class="gBox"><a id="kaybop" class="maskedImg" href="https://crazyninjageeks.wordpress.com/2015/11/28/introduction-to-kayfdanfsantaptvlirtsangbesputvombngagtvlimpkayfsnafkayfgaf-boptvegpdaffshofbompvlimpgafvlimpgaf/" target="_blank" title="kay(f)bop(t)">kay(f)bop(t)</a></div>
+            <div class="gBox"><a id="snapdragonrose" class="maskedImg" href="https://www.tumblr.com/abalidoth/700669343403556864/snapdragon-rose" target="_blank" title="Snapdragon Rose">Snapdragon Rose</a></div>
+            <div class="gBox"><a id="uwulang" class="maskedImg" href="https://docs.google.com/document/d/1ZV1U0S8qC6yJEi6grFO_Vq5A15lRVCLYeq_udWsC-9Y/edit" target="_blank" title="UwU">UwU</a></div>
+            <div class="gBox"><a id="conlanging" class="maskedImg" href="https://conlang.org/" target="_blank" title="and conlanging in general">Conlanging in general</a></div>
+        </div>
+        <h3 style="text-align: center;">Shows</h3>
+        <div class="interestContainer">
+            <div class="gBox"><a id="jetlag" class="maskedImg" href="https://www.youtube.com/c/jetlagthegame" target="_blank" title="Jet Lag: The Game">Jet Lag: The Game</a></div>
+            <div class="gBox"><a id="pibe" class="maskedImg" href="https://www.youtube.com/playlist?list=PLuKg-WhduhklFx7wvB_g6ijqADyKgnmiL" target="_blank" title="Play It By Ear">Play It By Ear</a></div>
+            <!--div class="gBox"><a id="taskmaster" class="maskedImg" href="https://www.taskmaster.tv/" target="_blank" title="Taskmaster">Taskmaster</a></div-->
         </div>
         <h3 style="text-align: center;">Other</h3>
         <div class="interestContainer">
-            <div class="gBox"><a id="jetlag" class="maskedImg" href="https://www.youtube.com/c/jetlagthegame" target="_blank">Jet Lag: The Game</a></div>
-            <div class="gBox"><a id="maths" class="maskedImg" href="https://en.wikipedia.org/wiki/Mathematics" target="_blank">Maths</a></div>
-            <div class="gBox"><a id="physics" class="maskedImg" href="https://en.wikipedia.org/wiki/Physics" target="_blank">Physics <small style="color: transparent;">(i'm literally doing a physics degree)</small></a></div>
+            <div class="gBox"><a id="maths" class="maskedImg" href="https://en.wikipedia.org/wiki/Mathematics" target="_blank" title="Maths">Maths</a></div>
+            <div class="gBox"><a id="physics" class="maskedImg" href="https://en.wikipedia.org/wiki/Physics" target="_blank" title="Physics">Physics <small style="color: transparent;">(i'm literally doing a physics degree)</small></a></div>
         </div>
         <hr/>
         <p style="text-align: center;">(there's probably more that i'm forgetting tbh)</p>
