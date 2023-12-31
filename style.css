@@ -114,6 +114,15 @@ select.button > option {
     background: var(--bg);
 }
 
+.hidden {
+    display: none;
+}
+
+a.unlink {
+    color: var(--headers);
+    text-decoration: none;
+}
+
 .linkBox {
     min-width: 20em;
     margin: auto;
@@ -219,7 +228,7 @@ hr {
 }
 #iPopupBorder {
     width: 45%;
-    height: calc(100% - 150px);
+    height: calc(100% - 90px);
     position: fixed;
     display: none;
 }
