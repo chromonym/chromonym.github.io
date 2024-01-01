@@ -64,6 +64,16 @@ header.gBox {
     justify-content: space-between;
     padding: 0;
 }
+footer.gBox {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    font-size: 0.75em;
+    text-align: center;
+}
+footer.gBox::before {
+    margin-bottom: 0;
+}
 div.ider {
     background: var(--gradient);
     background-attachment: fixed;

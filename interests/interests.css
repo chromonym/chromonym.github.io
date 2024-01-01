@@ -12,6 +12,15 @@
     font-family: "Universal Serif";
     src: url(fonts/universal-serif.ttf);
 }
+@font-face {
+    font-family: "Trunic";
+    src: url(fonts/Trunic-Bold.otf);
+}
+@font-face {
+    font-family: "Trunic";
+    src: url(fonts/Trunic-Regular.otf);
+    font-weight: bold;
+}
 /* OneShot */
 @font-face {
     font-family: "Terminus TTF Bold";
@@ -40,4 +49,25 @@
 @font-face {
     font-family: nasin-nanpa;
     src: url(fonts/nasin-nanpa-2.7.1.otf);
+}
+
+.spoilerFlex {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.spoilerFlex h3 {
+    margin: 0 20px;
+    flex-grow: 1;
+    color: var(--text);
+}
+.spoilerFlex img {
+    height: 50px;
+}
+.gBox {
+    margin: 0;
+}
+td {
+    padding-right: 10px;
+    text-align: center;
 }

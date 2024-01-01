@@ -5,3 +5,14 @@ window.onload = function() {
         }
     }
 }
+
+function clickOut(link) {
+    if (window.frameElement) {
+        // window is inside an iframe
+        console.log("swapping");
+        return parent.interestPopup(link);
+    } else {
+        // window is not in an iframe
+        return true;
+    }
+}
