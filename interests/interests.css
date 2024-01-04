@@ -50,7 +50,9 @@
     font-family: nasin-nanpa;
     src: url(fonts/nasin-nanpa-2.7.1.otf);
 }
-
+body {
+    padding-top: 0;
+}
 .spoilerFlex {
     display: flex;
     width: 100%;
@@ -70,4 +72,14 @@
 td {
     padding-right: 10px;
     text-align: center;
+}
+details > summary.gBox {
+    list-style: none;
+    cursor: pointer;
+}
+details {
+    padding-bottom: 40px;
+}
+details[open] {
+    padding-bottom: 0;
 }
