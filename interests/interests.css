@@ -23,8 +23,12 @@
 }
 /* OneShot */
 @font-face {
-    font-family: "Terminus TTF Bold";
+    font-family: "Terminus TTF";
     src: url(fonts/TerminusTTF-Bold.ttf);
+}
+@font-face {
+    font-family: "Minecraftia OS";
+    src: url(fonts/Minecraftia-Modified.ttf);
 }
 /* Outer Wilds */
 @font-face {
