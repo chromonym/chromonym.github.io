@@ -40,6 +40,14 @@
     src: url(fonts/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf);
     font-weight: bold;
 }
+@font-face {
+    font-family: "ITC Avant Garde Std Md";
+    src: url(fonts/ITC-Avant-Garde-Std-Md.ttf);
+}
+@font-face {
+    font-family: "ITC Serif Gothic";
+    src: url(fonts/ITC-Serif-Gothic.otf);
+}
 /* Ithkuil */
 @font-face {
     font-family: IthkuilBasic;
