@@ -2,7 +2,7 @@
     --bg: #1a1b23;
     --text: #b7b6c1;
     --headers: white;
-    --gradient: linear-gradient(180deg, #ff9200 0%, #ffb624 25%, #fff953 50%, #6dffab 75%, #00ffff 100%);
-    --primary: cyan;
-    --secondary: #ffb624;
+    --gradient: linear-gradient(180deg, rgba(35,255,214,1) 10%, rgba(118,153,231,1) 60%, rgba(191,114,233,1) 90%);
+    --primary: #23ffd6;
+    --secondary: #bf72e9;
 }
