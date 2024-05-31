@@ -5,12 +5,8 @@ body {
     background: var(--bg);
     background-attachment: fixed;
     color: var(--text);
-    padding: 30px;
     font-family: 'Inter', sans-serif;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: 0 10%;
 }
 
 h1, h2, h3 {
@@ -237,7 +233,7 @@ hr {
     border: none;
 }
 #iPopupBorder {
-    width: 45%;
+    width: calc(40% - 20px);
     height: calc(100% - 90px);
     position: fixed;
     display: none;
