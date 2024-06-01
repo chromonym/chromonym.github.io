@@ -1,4 +1,4 @@
-:root {
+body.gradient {
     --bg: linear-gradient(180deg, #ff9200 0%, #ffb624 25%, #fff953 50%, #6dffab 75%, #00ffff 100%);
     --text: #1a1b23;
     --headers: black;
