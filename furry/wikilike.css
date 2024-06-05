@@ -1,0 +1,98 @@
+body {
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 0.25em;
+    margin-top: 1em;
+    padding: 0;
+    font-family: 'Linux Libertine','Georgia','Times','Source Serif Pro',serif;
+    line-height: 1.375;
+    font-weight: normal;
+    border-bottom: 1px solid var(--border-color-base,#a2a9b1);
+}
+h1 {
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    line-height: 1.6;
+    padding-top: 0.5em;
+}
+a {
+    text-decoration: none;
+    color: #0645ad;
+    background: nonw;
+}
+a:hover {
+    text-decoration: underline;
+}
+.firstHeading {
+    margin-top: 0;
+}
+.vector-body {
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+.vector-body p {
+    margin: 0.5em 0;
+}
+#siteStub {
+    font-size: 92%;
+    display: block;
+}
+
+.mw-editsection::before {
+    content: '\200B';
+}
+.mw-editsection {
+    margin-left: 1em;
+    font-family: sans-serif;
+    font-size: small;
+    font-weight: normal;
+    line-height: 0;
+}
+.mw-editsection-bracket-L {
+    margin-right: 0.25em;
+}
+.mw-editsection-bracket-R {
+    margin-left: 0.25em;
+}
+.mw-editsection a {
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+table {
+    font-size: 100%;
+}
+.ambox {
+    margin: 0 10%;
+    border: 1px solid #a2a9b1;
+    background-color: #fbfbfb;
+    box-sizing: border-box;
+}
+.ambox-content {
+    border-left: 10px solid #f28500;
+}
+.mbox-image {
+    border: none;
+    padding: 2px 0 2px 0.5em;
+    text-align: center;
+}
+.mbox-image-div {
+    width: 52px;
+    height: 40px;
+}
+.mbox-text {
+    border: none;
+    padding: 0.25em 0.5em;
+    width: 100%;
+}
